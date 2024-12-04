@@ -14,7 +14,7 @@ resources:
 configMapGenerator:
   - name: edge-config
     files:
-      - application.yml
+      - application-production.yaml
     options:
       labels:
         app: edge-service  
