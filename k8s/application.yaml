@@ -15,7 +15,7 @@ spring:
 
          routes:
          -  id: catalog-route
-            uri: http://catalog-service:9001/books
+            uri: http://catalog-service:80/books
             predicates:
             - Path=/books/**
             filters:
@@ -38,7 +38,7 @@ spring:
                      factor: 2
                      basedOnPreviousValue: false
          -  id: order-route
-            uri: http://order-service:9001/books
+            uri: http://order-service:80/books
             predicates:
             - Path=/orders/**
             filters:
