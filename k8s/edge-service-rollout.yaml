@@ -51,12 +51,12 @@ spec:
             initialDelaySeconds: 15
             periodSeconds: 30 
           volumeMounts:
-          - name: edge-config-volume
+          - name: edge-configmap-volume
             mountPath: /workspace/config   
       volumes:
-      - name: edge-config-volume
+      - name: edge-configmap-volume
         configMap:
-            name: edge-config         
+            name: edge-configmap         
 ---
 apiVersion: v1
 kind: Service

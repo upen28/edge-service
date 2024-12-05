@@ -12,7 +12,7 @@ resources:
   - api-gateway-ingress.yaml
   
 configMapGenerator:
-  - name: edge-config
+  - name: edge-configmap
     files:
       - application.yaml
     options:
